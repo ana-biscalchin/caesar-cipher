@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
+
+    <div id="ciphering" class=center>
+        <p>
+            Informe a mensagem: <br> <input id="message" class="text_box" type="text" /> </p>
+
+        <p> Informe a chave: <input id="key_ciphering" class="key_box" type="number" />
+            <button class="button" id="encode" onclick="cipherEncode()"> Cifrar</button> </p>
+
+        <p>Esta é sua mensagem cifrada:</p>
+        <p id="encripted_message"> </p>
+    </div>
+
+
+
+
+    <div id="deciphering" class=center>
+
+        <p> Informe a mensagem cifrada: <br> <input id="cipher_message" class="text_box" type="text" /> </p>
+
+        <p> Informe a chave: <input id="key_deciphering" class="key_box" type="number" />
+            <button class="button" id="decode" onclick="cipherDecode()"> Decifrar</button> </p>
+
+        <p>Esta é sua mensagem cifrada:</p>
+        <p id="decipher_message"></p>
+    </div>
+
+
+
+
     <div id="root"></div>
+
     <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+</body>
+
 </html>
