@@ -1,22 +1,17 @@
 function cipherEncode() {
-    function cipherEncode() {
 
-        const offset = document.getElementById("key_ciphering").value;
-        const offsetInt = parseInt(offset);
+    const offset = parseInt(document.getElementById("key_ciphering").value);
+    let msg = document.getElementById("message").value;
 
-        console.log("esse é o offset " + offsetInt)
+    console.log("esse é o offset " + offset + "e a mensagem a ser criptografada: " + msg)
 
-        let msg = document.getElementById("message").value;
-        let arrayMsg = msg.split("");
+    for (let i = 0; i < msg.length; i++) {
+        let msg1 = msg.charCodeAt([i]);
 
-        for (var i = 0; i < msg.length; i++) {
+        console.log("essa é o cod ascii: " + msg1);
 
-            (arrayMsg[i] = msg.charCodeAt(i))
+        let replacement = ((msg1 - 65 + offset) % 26) + 65;
 
-            console.log(arrayMsg)
-
-
-
-        }
-
+        console.log(replacement)
     }
+}

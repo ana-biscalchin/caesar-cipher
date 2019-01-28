@@ -1,67 +1,27 @@
 function cipherEncode() {
+    const offset = parseInt(document.getElementById("key_ciphering").value);
+    var msg = document.getElementById("message").value;
+    var result = "";
 
-    const offset = document.getElementById("key_ciphering").value;
-    const offsetInt = parseInt(offset);
+    console.log("esse é o offset " + offset + "e a mensagem a ser criptografada: " + msg)
 
-    console.log("esse é o offset " + offsetInt)
+    for (let i = 0; i < msg.length; i++) {
+        let msg1 = msg.charCodeAt([i]);
 
-    let msg = document.getElementById("message").value;
-    let arrayMsg = msg.split("");
+        console.log("essa é o cod ascii: " + msg1);
 
-    for (var i = 0; i < msg.length; i++) {
+        let replacement = ((msg1 - 65 + offset) % 26) + 65;
 
-        (arrayMsg[i] = msg.charCodeAt(i))
+        console.log(replacement)
 
-        console.log(arrayMsg)
+        let encodeMsg = String.fromCharCode(replacement);
 
+        console.log(encodeMsg)
 
+        result += encodeMsg;
 
     }
+    console.log(result)
+    return document.getElementById("encripted_message").innerHTML = result
 
 }
-
-
-
-/*
--- -- -- --
-
-
-
-for (arrayMsg2 of arrayMsg1.map(replacement)
-
-    let arrayMsg2 =
-
-        console.log(arrayMsg2)
-
-
-    let encriptedMessage = arrayMsg.map(arrayMsg + offset)
-
-    console.log(encriptedMessage)
-
-
-    let replacement = arrayMsg.map((arrayMsg(i) + offset) % 26)
-
-    ===
-    ===
-
-    let replacement = function() {
-        for (var i = 0; i < arrayMsg.Msg.length; i++);
-        (arrayMsg + parseInt(offset)) % 26;
-    }
-    return replacement
-
-
-    ===
-    === === === ==
-
-
-
-    for (i = 0; i < arrayMsg.length; i++) {
-
-        (arrayMsg + offsetInt) % 26;
-
-
-        console.log(arrayMsg)
-
-
-    }
