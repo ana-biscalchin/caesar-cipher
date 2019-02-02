@@ -1,39 +1,87 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: rgb(63, 63, 63);
-    line-height: 30px;
-    text-align: center;
-    background-image: url(/home/ana/Google_Drive/lab/caesar-cipher/src/images/background1.png);
+header {
+    margin: 10% 0;
 }
 
-.text_box {
-    box-align: center;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color:  #000000;
+    line-height: 30px;
+    text-align: center;
+    background-image: url(/home/ana/Drive/lab/caesar-cipher/src/images/background1.png);
+}
+
+.box {
+    overflow: hidden;
+    margin: 560px0px 600px;
+    padding: 0 15px 15px 15px;
+    background: #444;
+    background: rgba(0, 0, 0, 0.35);
+    -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+    text-align: center;
+    box-shadow: 10px 10px 20px #333333;    
+    -moz-box-shadow: 10px 10px 20px #333333;
+    -webkit-box-shadow: 10px 10px 20px #333333;
 }
 
 .button {
     display: inline-block;
+    width: 100px;
     height: 30px;
     margin: 5px;
-    background: #19b9e7;
+    padding: 3px;
+    background: #35b4bd;
     font-size: 16px;
-    font-weight: 300;
-    line-height: 25px;
-    color: #fff;
+    font-weight: 16px;
+    color: rgb(63, 63, 63);
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    border:1px solid #000000;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
 }
 
-.disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
+.box_text {
+    overflow: hidden;
+    
+    text-overflow: ellipsis;
+    text-align: center;
 
-.center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-}
+
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc; 
+    border:1px solid #000000;
+    width: 80%;
+    height: 150px;
+    padding: 3px;
+ }
+
+ 
+ .key_box {
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc; 
+    border:1px solid #000000;
+    width: 100px;
+    height: 23px;
+    padding: 3px;
+ }
+
+ #encripted_message {
+
+    overflow: hidden;
+
+ }

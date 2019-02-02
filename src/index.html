@@ -8,39 +8,47 @@
 </head>
 
 <body>
+    <header>  
+    </header>
 
-    <div id="ciphering" class=center>
-        <p>
-            Informe a mensagem: <br> <input id="message" class="text_box" type="text" /> </p>
-
+    <div id="ciphering" class="box">
+      
+        <p> Informe a mensagem: <br> <input id="message" class="box_text" type="text" /> </p>
         <p> Informe a chave: <input id="key_ciphering" class="key_box" type="number" />
-            <button class="button" id="encode_button"> Cifrar</button> </p>
+        <button class="button" id="encode_button"> Cifrar</button> </p>
+    
+    </div>
+ 
+    <div id="result_cipher" class="box">
 
-        <p>Esta é sua mensagem cifrada:</p>
+        <p> Esta é sua mensagem cifrada:</p>
         <p id="encripted_message"> </p>
+
     </div>
 
-
-
-
-    <div id="deciphering" class=center>
-
-        <p> Informe a mensagem cifrada: <br> <input id="cipher_message" class="text_box" type="text" /> </p>
-
+    <div id="deciphering" class="box">
+         
+        <p> Informe a mensagem cifrada: <br> <input id="cipher_message" class="box_text" type="text" /> </p>
         <p> Informe a chave: <input id="key_deciphering" class="key_box" type="number" />
-            <button class="button" id="decode_button"> Decifrar</button> </p>
+        <button class="button" id="decode_button"> Decifrar</button> </p>
+
+    </div>
+
+    <div id="result_deciphering" class="box">
 
         <p>Esta é sua mensagem cifrada:</p>
         <p id="decipher_message"></p>
+
     </div>
 
+    <script src="cipher.js "></script>
+    <script src="testes.js"></script>
 
-
+</body>
+<footer>
 
     <div id="root "></div>
 
-    <script src="cipher.js "></script>
-
-</body>
+</footer>
 
 </html>

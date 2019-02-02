@@ -1,5 +1,5 @@
 document.getElementById("encode_button").addEventListener("click", collectEncode);
-
+document.getElementById("decode_button").addEventListener("click", collectDecode);
 
 function collectEncode() {
 
@@ -28,11 +28,6 @@ function cipherEncode(msg, offset) {
     return result;
 }
 
-
-
-document.getElementById("decode_button").addEventListener("click", collectDecode);
-
-
 function collectDecode() {
 
     const originalMsg = document.getElementById("cipher_message").value;
@@ -42,7 +37,6 @@ function collectDecode() {
     console.log({ originalMsg, offset, result });
     document.getElementById("decipher_message").innerHTML = decodeResult;
 }
-
 
 function cipherDecode(msg, offset) {
     result = "";
