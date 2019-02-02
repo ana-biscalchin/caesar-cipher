@@ -8,7 +8,7 @@ function collectEncode() {
     const encodeResult = cipherEncode(originalMsg, offset);
 
     console.log({ originalMsg, offset, result });
-    document.getElementById("encripted_message").innerHTML = encodeResult;
+    document.getElementById("cipher_message").innerHTML = encodeResult;
 }
 
 function cipherEncode(msg, offset) {

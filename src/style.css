@@ -7,84 +7,62 @@ body {
     font-size: 22px;
     font-weight: 300;
     color: rgb(63, 63, 63);
-    line-height: 30px;
-    text-align: center;
     background-image: url(colocar o endereço);
 }
-
 
 .box {
      
     margin: 20px 30% 20px;
-    padding: 0 15px 15px 15px;
-    background: #444;
-    background: rgba(0, 0, 0, 0.35);
-    -moz-border-radius: 4px 4px 0 0;
-    -webkit-border-radius: 4px 4px 0 0; 
+    padding: 15px 15px 15px 15px;
+    background: rgba(240, 234, 234, 0.281);
     border-radius: 4px 4px 0 0;
     text-align: center;
+    text-overflow: ellipsis;
+    
     box-shadow: 10px 10px 20px #333333;    
-    -moz-box-shadow: 10px 10px 20px #333333;
-    -webkit-box-shadow: 10px 10px 20px #333333;
-}
 
-.button {
-    display: inline-block;
-    width: 100px;
-    height: 30px;
-    margin: 5px;
-    padding: 3px;
-    background: #35b4bd;
-    font-size: 16px;
-    font-weight: 16px;
-    color: rgb(63, 63, 63);
-    box-shadow: 1px 1px 2px #333333;    
-    -moz-box-shadow: 1px 1px 2px #333333;
-    -webkit-box-shadow: 1px 1px 2px #333333;
-    border:1px solid #000000;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
 }
-
 
 .box_text {
-    
-    width: 600px;
-    height: 150px;
-    padding: 3px;
-
-    text-align: center;
-
+  
+    margin: 10px 10px 10px;
+    width: 80%;
+    height: 200px;
+    padding: 10px;
     border-radius:4px;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    box-shadow: 1px 1px 2px #333333;    
-    -moz-box-shadow: 1px 1px 2px #333333;
-    -webkit-box-shadow: 1px 1px 2px #333333;
+    box-shadow: 1px 1px 2px #333333;
     background: #cccccc; 
     border:1px solid #000000;
-    
- }
+}
 
-
- 
- .key_box {
-    border-radius:4px;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    box-shadow: 1px 1px 2px #333333;    
-    -moz-box-shadow: 1px 1px 2px #333333;
-    -webkit-box-shadow: 1px 1px 2px #333333;
-    background: #cccccc; 
-    border:1px solid #000000;
+.key_box {
     width: 100px;
     height: 23px;
     padding: 3px;
+    background: #cccccc; 
+    font-size: 22px;
+    border-radius:4px;
+    border:1px solid #000000;
+    box-shadow: 1px 1px 2px #333333;
  }
 
- #encripted_message {
+.button {
+    width: 100px;
+    height: 32px;
+    padding: 3px;
+    background: #48c8d179;
+    font-size: 22px;
+    color: rgb(63, 63, 63);
+    border-radius: 4px;
+    border:1px solid #000000;
+    box-shadow: 1px 1px 2px #333333;
+}
 
+ #encripted_message {
+    overflow: hidden;
+
+ }
+ #decipher_message {
     overflow: hidden;
 
  }
