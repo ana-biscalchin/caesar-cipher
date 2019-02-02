@@ -2,24 +2,26 @@ header {
     margin: 10% 0;
 }
 
-
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-weight: 300;
-    color:  #000000;
+    color: rgb(63, 63, 63);
     line-height: 30px;
     text-align: center;
-    background-image: url(/home/ana/Drive/lab/caesar-cipher/src/images/background1.png);
+    background-image: url(colocar o endereço);
 }
 
+
 .box {
-    overflow: hidden;
-    margin: 560px0px 600px;
+     
+    margin: 20px 30% 20px;
     padding: 0 15px 15px 15px;
     background: #444;
     background: rgba(0, 0, 0, 0.35);
-    -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0; 
+    border-radius: 4px 4px 0 0;
     text-align: center;
     box-shadow: 10px 10px 20px #333333;    
     -moz-box-shadow: 10px 10px 20px #333333;
@@ -45,12 +47,14 @@ body {
     border-radius: 4px;
 }
 
-.box_text {
-    overflow: hidden;
-    
-    text-overflow: ellipsis;
-    text-align: center;
 
+.box_text {
+    
+    width: 600px;
+    height: 150px;
+    padding: 3px;
+
+    text-align: center;
 
     border-radius:4px;
     -moz-border-radius:4px;
@@ -60,10 +64,9 @@ body {
     -webkit-box-shadow: 1px 1px 2px #333333;
     background: #cccccc; 
     border:1px solid #000000;
-    width: 80%;
-    height: 150px;
-    padding: 3px;
+    
  }
+
 
  
  .key_box {
