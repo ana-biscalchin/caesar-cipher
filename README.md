@@ -49,7 +49,7 @@ Usando conhecimentos de **User Experience Design** e de **JavaScript** o objetiv
 ## Fluxograma de blocos
 
 
-![Fluxograma](/src/cc.png)
+![Fluxograma](/src/images/cc.png)
 
 
 ```text
@@ -82,3 +82,8 @@ Usando conhecimentos de **User Experience Design** e de **JavaScript** o objetiv
 * [ ] Implementa `cipher.decode`.
 * [ ] Criar testes unitários.
  
+ ###Resultados Obtidos
+
+
+ - vou colocar um printscreen do projeto 
+ - descrever o que o meu site faz

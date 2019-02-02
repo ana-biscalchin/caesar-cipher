@@ -1,11 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(63, 63, 63);
+    line-height: 30px;
+    text-align: center;
+    background-image: url(/home/ana/Google_Drive/lab/caesar-cipher/src/images/background1.png);
+}
+
 .text_box {
     box-align: center;
 }
 
 .button {
-    background-color: #4CAF50;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    height: 30px;
+    margin: 5px;
+    background: #19b9e7;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .disabled {
