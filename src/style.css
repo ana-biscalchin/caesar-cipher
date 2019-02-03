@@ -1,39 +1,58 @@
 header {
-    margin: 10% 0;
-}
-
-body {
-    display: block;
+    margin: 10% auto;
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-weight: 300;
     color: rgb(63, 63, 63);
-    background-image: url(colocar o endereço);
+    text-align: center;
+
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: rgb(63, 63, 63);
+    background-image: url("/home/ana/Google Drive/lab/caesar-cipher/src/images/background1.png");
+
+ }
+
+.container{
+
+  display: flex;
+  width: 80% ;
+  height: auto  ;
+  margin: 0 auto;
+  padding: 10px;
+
+  text-align: center;
+
+
+}
 .box {
-    display: none;
-    position:relative;
-    margin: 20px 30% 20px;
+
+    display: inline-block;
+    visibility: hidden;
+    width: auto ;
+    height: auto;
+    margin: 10px;
     padding: 15px 15px 15px 15px;
-    background: rgba(240, 234, 234, 0.281);
+    background: rgba(240, 234, 234, 0.500);
     border-radius: 4px 4px 0 0;
     text-align: center;
-    text-overflow: ellipsis;
     box-shadow: 10px 10px 20px #333333;
 }
-
-
 
 .box_text {
     margin: 10px 10px 10px;
     width: 80%;
     height: 200px;
-    padding: 10px;
+    padding: 20px ;
     border-radius:4px;
     box-shadow: 1px 1px 2px #333333;
     background: #cccccc;
     border:1px solid #000000;
+
 }
 
 .key_box {
@@ -48,9 +67,11 @@ body {
  }
 
 .button {
+    position: bottom;
     width: 100px;
     height: 32px;
     padding: 3px;
+     margin-top: 12px;
     background: #48c8d179;
     font-size: 22px;
     color: rgb(63, 63, 63);
@@ -60,11 +81,12 @@ body {
 }
 
 .decision_button {
-    width: auto;
+    width: auto  ;
     height: auto;
-    margin: auto;
+    margin:auto;
+    display: inline-block;
+
     padding: 20px;
-    align-items: flex;
     background: #48c8d179;
     font-size: 32px;
     color: rgb(63, 63, 63);
@@ -72,22 +94,22 @@ body {
     border:1px solid #000000;
     box-shadow: 5px 5px 7px #333333;
 }
-
 #decision {
     position: center;
     display: flex;
-    width: 60% ;
-    height:200px ;
+    width: 50% ;
+    height: auto  ;
     margin: 0 auto;
     padding: 20px;
     background: rgba(240, 234, 234, 0.281);
+    text-align: center;
 }
 
 
- #result_cipher {
-   display:none;
+#result_cipher {
+   visibility: hidden;
  }
 
-  #result_deciphering {
-    display:none;
+#result_deciphering {
+  visibility: hidden;
   }
