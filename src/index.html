@@ -2,55 +2,57 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+		<meta charset="utf-8">
+		<title>Caesar Cipher</title>
+		<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>  
-    </header>
+		<header>
+		</header>
 
-    <div id="ciphering" class="box">
-      
-        <p> Informe a mensagem: <br> <input id="message" class="box_text" type="text" /> </p>
-        <p> Informe a chave: <input id="key_ciphering" class="key_box" type="number" />
-        <button class="button" id="encode_button"> Cifrar</button> </p>
-    
-    </div>
- 
-    <div id="result_cipher" class="box">
+		<div id="ciphering" class="box">
 
-        <p> Esta é sua mensagem cifrada:</p>
-        <p id="cipher_message"> </p>
+				<p> Informe a mensagem: <br>
+				<input id="message" class="box_text" type="text" /> </p>
+				<p> Informe a chave:
+				<input id="key_ciphering" class="key_box" type="number" />
 
-    </div>
+				<button class="button" id="encode_button"> Cifrar</button> </p>
 
-    <div id="deciphering" class="box">
-         
-        <p> Informe a mensagem cifrada: <br> <input id="cipher_message" class="box_text" type="text" /> </p>
-        <p> Informe a chave: <input id="key_deciphering" class="key_box" type="number" />
-        <button class="button" id="decode_button"> Decifrar</button> </p>
+		</div>
 
-    </div>
+		<div id="result_cipher" class="box">
 
-    <div id="result_deciphering" class="box">
+				<p> Esta é sua mensagem cifrada:</p>
+				<p id="cipher_message"> </p>
 
-        <p>Esta é sua mensagem decifrada:</p>
-        <p id="decipher_message"></p>
+		</div>
 
-    </div>
+		<div id="deciphering" class="box">
 
-    <script src="cipher.js "></script>
-    <script src="testes.js"></script>
+				<p> Informe a mensagem cifrada: <br> <input id="second_message" class="box_text" type="text" /> </p>
+				<p> Informe a chave: <input id="key_deciphering" class="key_box" type="number" />
+				<button class="button" id="decode_button"> Decifrar</button> </p>
+
+		</div>
+
+		<div id="result_deciphering" class="box">
+
+				<p>Esta é sua mensagem decifrada:</p>
+				<p id="decipher_message"></p>
+
+		</div>
+
+		<script src="cipher.js "></script>
+		<script src="testes.js"></script>
 
 <footer>
-
+		<div id="root "></div>
 
 
 </footer>
-    <div id="root "></div>
-
+<script src="cipher.js "></script>
 </body>
 
 
