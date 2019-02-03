@@ -11,10 +11,19 @@
 		<header>
 		</header>
 
+
+		<div id="decision">
+
+			<button class="decision_button"  id="decision_encode"> Cifrar uma mensagem </button> </p>
+			<button class="decision_button"  id="decision_decode"> Decifrar uma mensagem </button> </p>
+
+
+		</div>
+
 		<div id="ciphering" class="box">
 
 				<p> Informe a mensagem: <br>
-				<input id="message" class="box_text" type="text" /> </p>
+				<textarea id="message" class="box_text" type="textarea"  cols="30" rows="5"> </textarea> </p>
 				<p> Informe a chave:
 				<input id="key_ciphering" class="key_box" type="number" />
 
@@ -31,8 +40,10 @@
 
 		<div id="deciphering" class="box">
 
-				<p> Informe a mensagem cifrada: <br> <input id="second_message" class="box_text" type="text" /> </p>
-				<p> Informe a chave: <input id="key_deciphering" class="key_box" type="number" />
+				<p> Informe a mensagem cifrada: <br>
+				<textarea id="second_message" class="box_text" type="textarea"cols="30" rows="5" >  </textarea> </p>
+				<p> Informe a chave:
+				<input id="key_deciphering" class="key_box" type="number" />
 				<button class="button" id="decode_button"> Decifrar</button> </p>
 
 		</div>

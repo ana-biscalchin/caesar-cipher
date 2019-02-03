@@ -3,6 +3,7 @@ header {
 }
 
 body {
+    display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-weight: 300;
@@ -11,27 +12,27 @@ body {
 }
 
 .box {
-     
+    display: none;
+    position:relative;
     margin: 20px 30% 20px;
     padding: 15px 15px 15px 15px;
     background: rgba(240, 234, 234, 0.281);
     border-radius: 4px 4px 0 0;
     text-align: center;
     text-overflow: ellipsis;
-    
-    box-shadow: 10px 10px 20px #333333;    
-
+    box-shadow: 10px 10px 20px #333333;
 }
 
+
+
 .box_text {
-  
     margin: 10px 10px 10px;
     width: 80%;
     height: 200px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     border-radius:4px;
     box-shadow: 1px 1px 2px #333333;
-    background: #cccccc; 
+    background: #cccccc;
     border:1px solid #000000;
 }
 
@@ -39,7 +40,7 @@ body {
     width: 100px;
     height: 23px;
     padding: 3px;
-    background: #cccccc; 
+    background: #cccccc;
     font-size: 22px;
     border-radius:4px;
     border:1px solid #000000;
@@ -58,11 +59,35 @@ body {
     box-shadow: 1px 1px 2px #333333;
 }
 
- #encripted_message {
-    overflow: hidden;
+.decision_button {
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    align-items: flex;
+    background: #48c8d179;
+    font-size: 32px;
+    color: rgb(63, 63, 63);
+    border-radius: 4px;
+    border:1px solid #000000;
+    box-shadow: 5px 5px 7px #333333;
+}
 
- }
- #decipher_message {
-    overflow: hidden;
+#decision {
+    position: center;
+    display: flex;
+    width: 60% ;
+    height:200px ;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(240, 234, 234, 0.281);
+}
 
+
+ #result_cipher {
+   display:none;
  }
+
+  #result_deciphering {
+    display:none;
+  }
