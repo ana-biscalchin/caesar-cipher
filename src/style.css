@@ -13,7 +13,7 @@ body {
     font-size: 22px;
     font-weight: 300;
     color: rgb(63, 63, 63);
-    background-image: url("/home/ana/Google Drive/lab/caesar-cipher/src/images/background1.png");
+    background-image: url("/src/images/background1.png");
 
  }
 
@@ -22,18 +22,16 @@ body {
   display: flex;
   width: 80% ;
   height: auto  ;
-  margin: 0 auto;
+  margin: 15px auto;
   padding: 10px;
-
   text-align: center;
 
 
 }
 .box {
-
-    display: inline-block;
+    position:static;
     visibility: hidden;
-    width: auto ;
+    width: 325px;
     height: auto;
     margin: 10px;
     padding: 15px 15px 15px 15px;
@@ -44,6 +42,7 @@ body {
 }
 
 .box_text {
+  display: block;
     margin: 10px 10px 10px;
     width: 80%;
     height: 200px;
@@ -67,8 +66,7 @@ body {
  }
 
 .button {
-    position: bottom;
-    width: 100px;
+     width: 100px;
     height: 32px;
     padding: 3px;
      margin-top: 12px;
@@ -107,9 +105,13 @@ body {
 
 
 #result_cipher {
-   visibility: hidden;
+    display: block;
+
+
+     visibility: hidden;
  }
 
 #result_deciphering {
+  display: block;
   visibility: hidden;
   }

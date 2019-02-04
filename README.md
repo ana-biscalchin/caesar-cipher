@@ -66,24 +66,30 @@ Usando conhecimentos de **User Experience Design** e de **JavaScript** o objetiv
 
 
 
-### Passos 
+## Resultados Obtidos
 
-* [ ] `README.md` com explicações e desenho do projeto
-* [ ] Usar VanillaJS.
-* [ ] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
+* `README.md` com explicações e desenho do projeto
+* Usar VanillaJS.
+* Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
   cifrado.
-* [ ] Mostrar o resultado da cifra corretamente.
-* [ ] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
+* Mostrar o resultado da cifra corretamente.
+* Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
   descifrado.
-* [ ] Mostrar o resultado descifrado corretamente.
-* [ ] Permitir escolher o `offset` (_deslocamento_) a ser usado na
+* Mostrar o resultado descifrado corretamente.
+* Permitir escolher o `offset` (_deslocamento_) a ser usado na
   cifragem/descifragem.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Criar testes unitários.
+* Implementa `cipher.encode`.
+* Implementa `cipher.decode`.
+* Criar testes unitários.
+
+
+O site cifra e decifra usando chaves positivas e negativas.
+
+ - Telas
+![Tela Inicial](/src/images/tela1.png)
+![Tela 2](/src/images/tela2.png)
+
  
- ###Resultados Obtidos
 
 
- - vou colocar um printscreen do projeto 
- - descrever o que o meu site faz
+ 

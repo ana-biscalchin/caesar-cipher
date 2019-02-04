@@ -34,7 +34,6 @@ function collectEncode() {
     let offset = parseInt(document.getElementById("key_ciphering").value);
     let encodeResult = cipherEncode(msg, offset);
 
-    console.log({ msg, offset, encodeResult});
 
     document.getElementById("cipher_message").innerHTML =  encodeResult;
 
@@ -58,10 +57,10 @@ function cipherEncode(msg, offset) {
           code = msg.charCodeAt(i);
         }
 
-        console.log(code);
+
         result += String.fromCharCode(code);
   }
-  console.log(result);
+
 
   return result;
 }
@@ -72,7 +71,6 @@ function collectDecode() {
     let offset = parseInt(document.getElementById("key_deciphering").value);
     let decodeResult = cipherDecode(msg, offset);
 
-    console.log({ msg, offset, decodeResult});
 
     document.getElementById("decipher_message").innerHTML = decodeResult;
 
@@ -92,10 +90,10 @@ function cipherDecode(msg, offset) {
         else if (!(msg.charCodeAt(i) >= 65 && msg.charCodeAt(i) <= 90 && msg.charCodeAt(i) >= 97 && msg.charCodeAt(i) <= 122 )) {
           code = msg.charCodeAt(i);
         }
-    console.log(code);
+
     result += String.fromCharCode(code);
   }
-    console.log(result);
+ 
 
     return result;
 }
