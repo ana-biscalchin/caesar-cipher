@@ -13,56 +13,59 @@
 			<h2> Olá companheira, para sua segurança utilize nossa ferramenta de cifragem. </h2>
 		</header>
 
+		<main>
+			<div id="decision">
 
-		<div id="decision">
-
-			<button class="decision_button"  id="decision_encode"> Cifrar uma mensagem </button> </p>
-			<button class="decision_button"  id="decision_decode"> Decifrar uma mensagem </button> </p>
-
-
+				<button class="decision_button"  id="decision_encode"> Cifrar uma mensagem </button> </p>
+				<button class="decision_button"  id="decision_decode"> Decifrar uma mensagem </button> </p>
+	
+	
+			</div>
+		<div class = "container">
+	
+			<div id="ciphering" class="box">
+	
+					<p> Informe a mensagem: <br>
+					<textarea id="message" class="box_text" type="textarea"  cols="30" rows="5"> </textarea> </p>
+					<p> Informe a chave:
+					<input id="key_ciphering" class="key_box" type="number" />
+	
+					<button class="button" id="encode_button"> Cifrar</button> </p>
+	
+			</div>
+	
+			<div id="result_cipher" class="box">
+	
+					<p> Esta é sua mensagem cifrada:</p>
+					<p id="cipher_message"> </p>
+	
+			</div>
+	
+			<div id="deciphering" class="box">
+	
+					<p> Informe a mensagem cifrada: <br>
+					<textarea id="second_message" class="box_text" type="textarea"cols="30" rows="5" >  </textarea> </p>
+					<p> Informe a chave:
+					<input id="key_deciphering" class="key_box" type="number" />
+					<button class="button" id="decode_button"> Decifrar</button> </p>
+	
+			</div>
+	
+			<div id="result_deciphering" class="box">
+	
+					<p>Esta é sua mensagem decifrada:</p>
+					<p id="decipher_message"></p>
+	
+			</div>
+	
+	
+	
 		</div>
-	<div class = "container">
+	 
+	
 
-		<div id="ciphering" class="box">
-
-				<p> Informe a mensagem: <br>
-				<textarea id="message" class="box_text" type="textarea"  cols="30" rows="5"> </textarea> </p>
-				<p> Informe a chave:
-				<input id="key_ciphering" class="key_box" type="number" />
-
-				<button class="button" id="encode_button"> Cifrar</button> </p>
-
-		</div>
-
-		<div id="result_cipher" class="box">
-
-				<p> Esta é sua mensagem cifrada:</p>
-				<p id="cipher_message"> </p>
-
-		</div>
-
-		<div id="deciphering" class="box">
-
-				<p> Informe a mensagem cifrada: <br>
-				<textarea id="second_message" class="box_text" type="textarea"cols="30" rows="5" >  </textarea> </p>
-				<p> Informe a chave:
-				<input id="key_deciphering" class="key_box" type="number" />
-				<button class="button" id="decode_button"> Decifrar</button> </p>
-
-		</div>
-
-		<div id="result_deciphering" class="box">
-
-				<p>Esta é sua mensagem decifrada:</p>
-				<p id="decipher_message"></p>
-
-		</div>
-
-
-
-	</div>
- 
-
+		</main>
+	
 <footer>
 		<div id="root "></div>
 
