@@ -3,49 +3,46 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="./src/style.css" />
-  <link rel="shortcut icon" href="/src/images/favicon.ico" />
+  <link rel="shortcut icon" href="./src/images/favicon.ico" />
 </head>
-
 <body>
   <header>
     <h2> Olá companheira, para sua segurança utilize nossa ferramenta de cifragem. </h2>
   </header>
-
   <main>
-    <div id="decision">
-      <button class="decision_button"> Cifrar uma mensagem </button> </p>
-      <button class="decision_button"> Decifrar uma mensagem </button> </p>
-    </div>
-    <div class="container">
+    <section class="container">
+      <button class="button decision_button"> Cifrar uma mensagem </button>
+      <button class="button decision_button"> Decifrar uma mensagem </button>
+    </section>
+    <section class="container">
       <div id="ciphering" class="box">
-        <p> Informe a mensagem: <br>
-          <textarea id="message" class="box_text" type="textarea" cols="30" rows="5"> </textarea> </p>
-        <p> Informe a chave:
-          <input id="key_ciphering" class="key_box" type="number" />
-          <button class="button" id="encode_button"> Cifrar</button> </p>
+        Informe a mensagem:
+        <textarea id="message" class="box_text" type="textarea" cols="30" rows="5"> </textarea> Informe a chave:
+        <input id="key_ciphering" class="key_box" type="number" />
+        <button class="button" id="encode"> Cifrar </button>
       </div>
-      <div id="result_cipher" class="box">
-        <p> Esta é sua mensagem cifrada:</p>
-        <p id="cipher_message"> </p>
+      <div id="result_cipher" class="box result">
+        Esta é sua mensagem cifrada:
+        <p id="cipher_message"></p>
       </div>
+    </section>
+    <section class="container">
       <div id="deciphering" class="box">
-        <p> Informe a mensagem cifrada: <br>
-          <textarea id="second_message" class="box_text" type="textarea" cols="30" rows="5">  </textarea> </p>
-        <p> Informe a chave:
-          <input id="key_deciphering" class="key_box" type="number" />
-          <button class="button" id="decode_button"> Decifrar</button> </p>
+        Informe a mensagem cifrada:
+        <textarea id="second_message" class="box_text" type="textarea" cols="30" rows="5">  </textarea> </p>
+        Informe a chave:
+        <input id="key_deciphering" class="key_box" type="number" />
+        <button class="button" id="decode_button"> Decifrar</button>
       </div>
-      <div id="result_deciphering" class="box">
-        <p>Esta é sua mensagem decifrada:</p>
+      <div id="result_deciphering" class="box result">
+        Esta é sua mensagem decifrada:
         <p id="decipher_message"></p>
       </div>
-    </div>
+    </section>
   </main>
-  <footer>
-    <div id="root "></div>
-  </footer>
   <script src="./src/cipher.js "></script>
   <script src="./test/cipher.spec.js"></script>
 </body>
