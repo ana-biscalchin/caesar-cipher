@@ -1,99 +1,77 @@
 document.getElementById("decision_encode").addEventListener("click", showCiphering);
 document.getElementById("decision_decode").addEventListener("click", showDeciphering);
-
-
 document.getElementById("encode_button").addEventListener("click", collectEncode);
 document.getElementById("decode_button").addEventListener("click", collectDecode);
 
-
-
-function mudarEstado(primeiro, segundo) {
-      let displayPrimeiro = document.getElementById(primeiro).style.visibility;
-      let displaySegundo = document.getElementById(segundo).style.visibility;
-      console.log(displayPrimeiro)
-      if (displayPrimeiro === "hidden" ) {
-          document.getElementById(primeiro).style.visibility = "visible";
+changeState = (state) => {
+      let display = document.getElementById(state).style.visibility;
+      if (display === "hidden" ) {
+          display = "visible";
       }
       else {
-          document.getElementById(primeiro).style.visibility = "hidden";
+          display = "hidden";
       }
+};
 
-}
+ showCiphering = () => {
+    changeState("ciphering", "deciphering")
+};
 
-function showCiphering(){
-    mudarEstado("ciphering", "deciphering")
-}
+showDeciphering = () => {
+    changeState("deciphering", "ciphering")
+};
 
-function showDeciphering(){
-    mudarEstado("deciphering", "ciphering")
-}
-
-function collectEncode() {
-
-    let msg = document.getElementById("message").value;
+collectEncode = () => {
+    let message = document.getElementById("message").value;
     let offset = parseInt(document.getElementById("key_ciphering").value);
-    let encodeResult = cipherEncode(msg, offset);
-
-
+    let encodeResult = cipherEncode(message, offset);
     document.getElementById("cipher_message").innerHTML =  encodeResult;
+    changeState("result_cipher", "ciphering")
+};
 
-    mudarEstado("result_cipher", "ciphering")
-
-}
-
-function cipherEncode(msg, offset) {
+cipherEncode = (message, offset) => {
     result = "";
-    for (let i = 0; i < msg.length; i++) {
-        if (msg.charCodeAt(i) >= 65 && msg.charCodeAt(i) <= 90) {
-            code = (msg.charCodeAt(i) - 65 + (offset % 26) + 26) % 26 + 65;
+    for (let i in message) {
+        if (message.charCodeAt(i) >= 65 && message.charCodeAt(i) <= 90) {
+            code = (message.charCodeAt(i) - 65 + (offset % 26) + 26) % 26 + 65;
         }
-        else if (msg.charCodeAt(i) >= 97 && msg.charCodeAt(i) <= 122) {
-            code = (msg.charCodeAt(i) - 97 + (offset % 26) + 26) % 26 + 97;
+        else if (message.charCodeAt(i) >= 97 && message.charCodeAt(i) <= 122) {
+            code = (message.charCodeAt(i) - 97 + (offset % 26) + 26) % 26 + 97;
         }
-        else if (msg.charCodeAt(i) === 32) {
+        else if (message.charCodeAt(i) === 32) {
             code = 32;
         }
-        else if (!(msg.charCodeAt(i) >= 65 && msg.charCodeAt(i) <= 90 && msg.charCodeAt(i) >= 97 && msg.charCodeAt(i) <= 122 )) {
-          code = msg.charCodeAt(i);
+        else if (!(message.charCodeAt(i) >= 65 && message.charCodeAt(i) <= 90 && message.charCodeAt(i) >= 97 && message.charCodeAt(i) <= 122 )) {
+          code = message.charCodeAt(i);
         }
-
-
         result += String.fromCharCode(code);
   }
-
-
   return result;
-}
+};
 
-function collectDecode() {
-
-    let msg = document.getElementById("second_message").value;
+collectDecode = () => {
+    let message = document.getElementById("second_message").value;
     let offset = parseInt(document.getElementById("key_deciphering").value);
-    let decodeResult = cipherDecode(msg, offset);
-
+    let decodeResult = cipherDecode(message, offset);
 
     document.getElementById("decipher_message").innerHTML = decodeResult;
+      changeState("result_deciphering", "deciphering")
+};
 
-      mudarEstado("result_deciphering", "deciphering")
-}
-
-function cipherDecode(msg, offset) {
+cipherDecode = (message, offset) => {
     result = "";
-    for (let i = 0; i < msg.length; i++) {
-         if (msg.charCodeAt([i]) >= 65 && msg.charCodeAt(i) <= 90) {
-             code = (msg.charCodeAt([i]) - 65 - (offset % 26) + 26) % 26 + 65;
-         } else if (msg.charCodeAt([i]) >= 97 && msg.charCodeAt(i) <= 122) {
-             code = (msg.charCodeAt([i]) - 97 - (offset % 26) + 26) % 26 + 97;
-         } else if (msg.charCodeAt([i]) === 32) {
+    for (let i in message) {
+         if (message.charCodeAt([i]) >= 65 && message.charCodeAt(i) <= 90) {
+             code = (message.charCodeAt([i]) - 65 - (offset % 26) + 26) % 26 + 65;
+         } else if (message.charCodeAt([i]) >= 97 && message.charCodeAt(i) <= 122) {
+             code = (message.charCodeAt([i]) - 97 - (offset % 26) + 26) % 26 + 97;
+         } else if (message.charCodeAt([i]) === 32) {
              code = 32;
          }
-        else if (!(msg.charCodeAt(i) >= 65 && msg.charCodeAt(i) <= 90 && msg.charCodeAt(i) >= 97 && msg.charCodeAt(i) <= 122 )) {
-          code = msg.charCodeAt(i);
+        else if (!(message.charCodeAt(i) >= 65 && message.charCodeAt(i) <= 90 && message.charCodeAt(i) >= 97 && message.charCodeAt(i) <= 122 )) {
+          code = message.charCodeAt(i);
         }
-
     result += String.fromCharCode(code);
-  }
- 
-
+};
     return result;
-}
+};
